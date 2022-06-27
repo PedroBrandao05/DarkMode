@@ -1,0 +1,115 @@
+:root {
+  --darker: #293147;
+  --lighter: #87a3ed;
+  --medium: #374261;
+  --light-dark: #3f4b6e;
+  --lightless-light: #6377ad;
+  --main-font: 'Anek Latin';
+}
+
+* {
+  font-family: var(--main-font);
+  font-weight: 200;
+}
+
+.corpo {
+  background-color: var(--lighter);
+}
+
+.darkMode.corpo {
+  background-color: var(--medium);
+}
+
+.cabecalho {
+  background-color: #6377ad;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.darkMode.cabecalho {
+  background-color: var(--darker);
+}
+
+.icone {
+  width: 30px;
+  content: url(../img/simbolo-de-sol-preto-solido.png);
+}
+
+.darkMode.icone {
+  content: url(../img/lua-fina.png);
+}
+
+.cabecalho__titulo {
+  font-family: var(--main-font);
+  font-size: 24px;
+  font-weight: 200;
+}
+
+.darkMode.cabecalho__titulo {
+  color: white;
+}
+
+.titulo__negrito {
+  font-weight: 500;
+}
+
+.titulo {
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 72px;
+  color: var(--darker);
+}
+
+.darkMode.titulo {
+  color: var(--lighter);
+  content: 'Dark Mode';
+}
+
+.ativaModo {
+  border: 3px solid white;
+  width: 17%;
+  height: 10%;
+  background-color: #293147;
+  border-radius: 10px;
+  font-size: 20px;
+  color: var(--lighter);
+  padding: 1 1.5em;
+}
+
+.darkMode.ativaModo {
+  border: 3px solid var(--lightless-light);
+  background-color: var(--lighter);
+  color: var(--darker);
+  content: 'Switch to Light Mode';
+}
+
+.principal {
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3em;
+}
+
+.rodape {
+  padding: 0.5em;
+  background-color: var(--lightless-light);
+  margin: 0;
+}
+
+.darkMode.rodape {
+  background-color: var(--darker);
+}
+
+.rodape__titulo {
+  font-family: var(--main-font);
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.darkMode.rodape__titulo {
+  color: white;
+}
